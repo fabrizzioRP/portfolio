@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabrizzio Rosales</title>
+    <link rel="shortcut icon" href="./assets/icono1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Nunito+Sans:ital,wght@0,200;0,300;0,600;1,200;1,300;1,400&family=Open+Sans&family=PT+Sans:wght@400;700&family=Roboto:wght@100&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- NAVIGATION -->
+    <header class="main-navigator">
+        <a class="logo" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-letter-f" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#03DAC6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M17 4h-10v16" />
+                <line x1="7" y1="12" x2="15" y2="12" />
+            </svg>
+        </a>
+        <div class="sites">
+            <a href="#aboutmeS">About Me</a>
+            <a href="#skillsS">Skills</a>
+            <a href="#contactmeS">Contact Me</a>
+        </div> 
+    </header>
+
+    <!-- MAIN PRESENTATION -->
+    <section class="conteiner one">
+
+        <img class="me" src="./assets/me.jpg" alt="me">
+        
+        <div class="presentation">
+            <h1>Fabrizzio Rosales</h1>
+            <h2>Software Engineer</h2>
+            <p>A young man passionate about the world of technology</p>
+        </div>
+
+    </section>
+
+    <!-- INFORMATION -->
+    <main class="conteiner">
+
+        <!-- ABOUTME -->
+        <div class="aboutme" id="aboutmeS">
+            <h2>About Me</h2>
+
+            <div class="content1">
+                <div>
+                    <img class="imageaboutme" src="./assets/aboutme.png" alt="aboutme">
+                </div>
+    
+                <div class="info">
+                    <p>Hello my name is Fabrizzio Rosales a Software Engineer, I am 21 years old, now I live in Santiago de Chile, Actually I work in my final project at Duoc UC, I am a competitive person at all and I really enjoy self-taught learning. I am passionate about the world of technology and I like to solve any problem in any case and learn from it. I am a person with goals to achieve.</p>
+                    <p>My interest is related to software development, I have worked on projects related to mobile, desktop, and web application development, but I like backend development. In addition, I have worked on a project on Big Data and Data Mining at Duoc UC. I have a great ability to develop software and I like to follow good practices to build it.</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- SKILLS -->
+        <div class="skills" id="skillsS">
+            <h2>Skills</h2>
+            
+            <div class="grid-skills">
+
+                <div class="card-skill">
+                    <img class="imgcard" src="./assets/aws.png" alt="aws">
+                    <h3>AMAZON WEB SERVICES</h3>
+                </div>
+
+                <!-- REFACTORIZAR CON JS -->
+                <div class="card-skill">
+                    <img class="imgcard" src="./assets/express.png" alt="express">
+                    <h3>EXPRESS JS</h3>
+                </div>
+
+                <div class="card-skill">
+                    <img class="imgcard" src="./assets/js.png" alt="js">
+                    <h3>JAVASCRIPT</h3>
+                </div>
+
+                <div class="card-skill">
+                    <img class="imgcard" src="./assets/node.png" alt="nodejs">
+                    <h3>NODE JS</h3>
+                </div>
+
+                <div class="card-skill">
+                    <img class="imgcard" src="./assets/googlecloud.png" alt="gcloud">
+                    <h3>GOOGLE CLOUD</h3>
+                </div>
+
+                <div class="card-skill">
+                    <img class="imgcard" src="./assets/docker.png" alt="docker">
+                    <h3>DOCKER</h3>
+                </div>
+
+                <div class="card-skill">
+                    <img class="imgcard" src="./assets/python.png" alt="python">
+                    <h3>PYTHON</h3>
+                </div>
+
+                <div class="card-skill">
+                    <img class="imgcard" src="./assets/typescript.png" alt="typescript">
+                    <h3>TYPESCRIPT</h3>
+                </div>
+
+                <div class="card-skill">
+                    <img class="imgcard" src="./assets/postgres.png" alt="postgres">
+                    <h3>POSTGRESQL</h3>
+                </div>
+
+                <div class="card-skill">
+                    <img class="imgcard" src="./assets/kuberntes.png" alt="Kubernetes">
+                    <h3>KUBERNETES</h3>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- CONTACT ME --> 
+        <div class="contactme" id="contactmeS">
+            <h2>Contact me</h2>
+
+            <div class="send-email">
+                <input type="text" id="toName" value="Fabrizzio" readonly="readonly">
+                <input type="text" id="fromName" placeholder="from name" required>
+                <input type="text" id="msg" placeholder="tu mensaje" required>
+                <button onclick="sendEmail()" class="send">Send</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Fabrizzio Rosales | &copy; 2022</p>
+        <div class="links-accounts">
+            <a href="https://github.com/fabrizzioRP" target="_blank">
+                <img src="https://applets.imgix.net/https%3A%2F%2Fassets.ifttt.com%2Fimages%2Fchannels%2F2107379463%2Ficons%2Fmonochrome_large.png?w=240&h=240&s=8a19bbc158996d098e2fb18310ba7f33" alt="githubaccount">
+            </a>
+            <a href="https://www.linkedin.com/in/fabrizziorosales/" target="_blank">
+                <img src="./assets/linkedln.png" alt="linkedlnaccount">
+            </a>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('Fo-BGQ3LN5LBxhpnV')</script>
+</body>
+</html>
