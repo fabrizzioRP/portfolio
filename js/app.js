@@ -4,6 +4,12 @@ const ipt3 = document.getElementById('toName');
 const btn = document.querySelector(".send");
 
 async function sendEmail() {
+    
+    if( ipt1.value.length == 0 || ipt2.value.length == 0 ){
+        window.alert("Fill in the fields");
+        return;
+    }    
+    
     let tempParams = {
         from_name: ipt1.value,
         to_name: ipt3.value,
@@ -13,7 +19,7 @@ async function sendEmail() {
     const resp = await emailjs.send("service_9hzpjc2","template_j8bs9mn", tempParams).then(resp => resp);
 
     if( resp.status !== 200 ){
-        window.alert("Mensaje No Enviado");
+        window.alert("Message not sent");
         return;
     }
 
@@ -24,5 +30,5 @@ async function sendEmail() {
     ipt2.setAttribute("disabled", "disabled");
     btn.setAttribute("disabled", "disabled");
 
-    window.alert("Mensaje Enviado");
+    window.alert("Message sent");
 }
